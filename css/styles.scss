@@ -1,0 +1,130 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	font-size: 16px;
+	line-height: 1;
+	font-family: SF;
+	font-size: 16px;
+}
+
+body.lock {
+	overflow: hidden;
+}
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: SF;
+	font-size: 16px;
+}
+.hidden-buttons {
+	@media (max-width: 900px) {
+	}
+}
+.container {
+	max-width: 1288px;
+	margin: 0 auto;
+	padding: 0 16px;
+	width: 100%;
+}
+.df-col {
+	display: flex;
+	flex-direction: column;
+}
+.d-flex {
+	display: flex;
+}
+.coin {
+	&-main {
+		position: relative;
+		&__bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 0;
+			bottom: 0;
+			height: 100vh;
+			width: 100%;
+			background: linear-gradient(
+				0deg,
+				#fff 8.73%,
+				#82c6c0 56.71%,
+				#96bbf2 99.95%
+			);
+			z-index: -1;
+			@media (max-width: 768px) {
+				height: 125vh;
+			}
+		}
+		&__top {
+			padding: 56px 0px;
+			text-align: center;
+			@media (max-width: 768px) {
+				padding: 32px 0px;
+			}
+			&-list {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 84px;
+				@media (max-width: 1024px) {
+					gap: 40px;
+				}
+				@media (max-width: 850px) {
+					gap: 16px;
+				}
+				@media (max-width: 768px) {
+					display: none;
+				}
+			}
+			&-item {
+				display: flex;
+				gap: 16px;
+				text-align: justify;
+				@media (max-width: 850px) {
+					gap: 10px;
+				}
+				&-img {
+					width: 48px;
+					height: 48px;
+				}
+			}
+		}
+		&__title {
+			color: #000;
+			font-size: 56px;
+			font-weight: 700;
+			line-height: 132%;
+			letter-spacing: -0.56px;
+			margin-bottom: 16px;
+			@media (max-width: 768px) {
+				font-size: 38px;
+			}
+		}
+		&__subtitle {
+			color: #fff;
+			font-size: 22px;
+			font-weight: 600;
+			line-height: 28px;
+			letter-spacing: -0.44px;
+			max-width: 786px;
+			width: 100%;
+			margin: 0 auto 32px;
+			@media (max-width: 768px) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

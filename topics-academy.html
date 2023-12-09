@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/fonts.css">
+	<link rel="stylesheet" href="./css/styles.css">
+	<link rel="stylesheet" href="./css/topic.css">
+	<title>Topics at Academy</title>
+</head>
+
+<body>
+	<main class="topics-academy">
+		<div class="topics-academy__bg">
+		</div>
+		<div class="container">
+			<a href="#" class='topics-academy__back'>
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+					<path d="M12.6666 8H3.33329" stroke="black" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" />
+					<path d="M8 3.33325L3.33333 7.99992L8 12.6666" stroke="black" stroke-width="2"
+						stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+				Back to Research Reports
+			</a>
+			<h1 class="topics-academy__title">Topics at Academy</h1>
+			<div class='topics-academy__top-filter'>
+				<img src="./img/vector/arrow-down.svg" alt="">
+				<span class="topics-academy__top-filter-show">Show filters</span>
+				<span class="topics-academy__top-filter-close">Hide filters</span>
+			</div>
+		</div>
+		<div class="topics-academy__inner">
+			<div class="topics-academy__wrapper top-filter">
+				<div class="topics-academy__top">
+					<div class="topics-academy__top-wrapper">
+						<div class="topics-academy__top-left">
+							<div class="topics-academy__top-difficulty">
+								<div class="topics-academy__top-difficulty-name">Difficulty:</div>
+								<div class="topics-academy__top-difficulty-box">
+									<div class="topics-academy__top-difficulty-item active">Beginner</div>
+									<div class="topics-academy__top-difficulty-item">Intermediate</div>
+									<div class="topics-academy__top-difficulty-item">Advanced</div>
+								</div>
+							</div>
+							<div class="topics-academy__top-time">
+								<div class="topics-academy__top-time-title">Reading time</div>
+								<div class="topics-academy__top-range">
+									<span class="topics-academy__top-range-span"></span>
+									<span class="topics-academy__top-range-div"></span>
+									<input type="range" min="1" max="30" value="15" step="1" list="tickmarks"
+										oninput='updateRangeSpan(this)'>
+									<datalist id="tickmarks">
+										<option value="1" label="1m">
+										<option value="3" label="3m">
+										<option value="5" label="5m">
+										<option value="10" label="10m">
+										<option value="15" label="15m">
+										<option value="20" label="20m">
+										<option value="25" label="25m">
+										<option value="30" label="∞">
+									</datalist>
+								</div>
+							</div>
+						</div>
+						<div class="topics-academy__top-right">
+							<div class="topics-academy__topic-name">Topics:</div>
+							<div class="topics-academy__topic-box">
+								<div class="topics-academy__topic-item">Altcoin</div>
+								<div class="topics-academy__topic-item">Bitcoin</div>
+								<div class="topics-academy__topic-item">Blockchain</div>
+								<div class="topics-academy__topic-item">Community</div>
+								<div class="topics-academy__topic-item">Consensus</div>
+								<div class="topics-academy__topic-item">Cryptography</div>
+								<div class="topics-academy__topic-item">Cryptonomy</div>
+								<div class="topics-academy__topic-item">DeFi</div>
+								<div class="topics-academy__topic-item">Economics</div>
+								<div class="topics-academy__topic-item">Essentials</div>
+								<div class="topics-academy__topic-item">Ethereum</div>
+								<div class="topics-academy__topic-item">History</div>
+								<div class="topics-academy__topic-item">Metaverse</div>
+								<div class="topics-academy__topic-item">Mining</div>
+								<div class="topics-academy__topic-item">NFT</div>
+								<div class="topics-academy__topic-item">Personal Finance</div>
+								<div class="topics-academy__topic-item">Privacy</div>
+								<div class="topics-academy__topic-item">Security</div>
+								<div class="topics-academy__topic-item">Tech</div>
+								<div class="topics-academy__topic-item">Technical Analysis</div>
+								<div class="topics-academy__topic-item">Trading</div>
+								<div class="topics-academy__topic-item">Tutorials</div>
+								<div class="topics-academy__topic-item">Use Cases</div>
+								<div class="topics-academy__topic-item">Wallet</div>
+								<div class="topics-academy__topic-item">Web3</div>
+							</div>
+						</div>
+					</div>
+					<div class="topics-academy__top-bottom">
+						<button class='topics-academy__top-bottom-clear'> <img src="./img/vector/close.svg" alt="">Clear
+							filters</button>
+						<button class='topics-academy__top-bottom-apply'> <img src="./img/vector/agree.svg" alt="">Apply
+							filters</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="topics-academy__inner">
+			<div class="topics-academy__wrapper">
+				<div class="topics-academy__block">
+					<h6 class="topics-academy__block-name">Articles(50)</h6>
+					<div class="topics-academy__block-select">
+						<div class="topics-academy__block-select-title">
+							Recently published <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+								viewBox="0 0 24 24" fill="none">
+								<path d="M16 10L12 14L8 10" stroke="black" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+							<div class="topics-academy__block-select-body">
+								<div class="topics-academy__block-select-item">Most viewed</div>
+								<div class="topics-academy__block-select-item">Recently published</div>
+								<div class="topics-academy__block-select-item">Recently updated</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="topics-academy__box">
+					<!-- box item 1 -->
+					<a href='#' class="topics-academy__item">
+						<div class="topics-academy__item-img">
+							<img src="./img/blockchain/items/1.jpg" alt="">
+							<p class="topics-academy__item-level beginner">Beginner</p>
+						</div>
+						<div class="topics-academy__item-content">
+							<h4 class="topics-academy__item-title">The Relationship Between Blockchain and AI</h4>
+							<div class="topics-academy__item-bottom">
+								<div>Nov 16, 2023</div>
+								<div class="topics-academy__item-read"><svg xmlns="http://www.w3.org/2000/svg"
+										width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M17.5979 7.96301L18.531 7.03003C18.824 6.73703 18.824 6.26199 18.531 5.96899C18.238 5.67599 17.763 5.67599 17.47 5.96899L16.4919 6.94702C15.1039 5.88702 13.377 5.25 11.5 5.25C6.951 5.25 3.25 8.951 3.25 13.5C3.25 18.049 6.951 21.75 11.5 21.75C16.049 21.75 19.75 18.049 19.75 13.5C19.75 11.368 18.9299 9.42901 17.5979 7.96301ZM11.5 20.25C7.778 20.25 4.75 17.222 4.75 13.5C4.75 9.778 7.778 6.75 11.5 6.75C15.222 6.75 18.25 9.778 18.25 13.5C18.25 17.222 15.222 20.25 11.5 20.25ZM13.95 14.4C14.281 14.649 14.3481 15.119 14.0991 15.45C13.9531 15.646 13.727 15.75 13.498 15.75C13.342 15.75 13.1841 15.701 13.0491 15.6L11.0491 14.1C10.8611 13.958 10.749 13.736 10.749 13.5V10C10.749 9.586 11.085 9.25 11.499 9.25C11.913 9.25 12.249 9.586 12.249 10V13.125L13.95 14.4ZM8.25 3C8.25 2.586 8.586 2.25 9 2.25H14C14.414 2.25 14.75 2.586 14.75 3C14.75 3.414 14.414 3.75 14 3.75H9C8.586 3.75 8.25 3.414 8.25 3Z"
+											fill="#6F7A83" />
+									</svg>15 min read</div>
+							</div>
+						</div>
+					</a>
+					<!-- end box item 1 -->
+					<!-- box item 2 -->
+					<a href='#' class="topics-academy__item">
+						<div class="topics-academy__item-img">
+							<img src="./img/blockchain/items/2.jpg" alt="">
+							<p class="topics-academy__item-level advanced">Advanced</p>
+						</div>
+						<div class="topics-academy__item-content">
+							<h4 class="topics-academy__item-title">What Is Hash Rate?</h4>
+							<div class="topics-academy__item-bottom">
+								<div>Nov 14, 2023</div>
+								<div class="topics-academy__item-read"><svg xmlns="http://www.w3.org/2000/svg"
+										width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M17.5979 7.96301L18.531 7.03003C18.824 6.73703 18.824 6.26199 18.531 5.96899C18.238 5.67599 17.763 5.67599 17.47 5.96899L16.4919 6.94702C15.1039 5.88702 13.377 5.25 11.5 5.25C6.951 5.25 3.25 8.951 3.25 13.5C3.25 18.049 6.951 21.75 11.5 21.75C16.049 21.75 19.75 18.049 19.75 13.5C19.75 11.368 18.9299 9.42901 17.5979 7.96301ZM11.5 20.25C7.778 20.25 4.75 17.222 4.75 13.5C4.75 9.778 7.778 6.75 11.5 6.75C15.222 6.75 18.25 9.778 18.25 13.5C18.25 17.222 15.222 20.25 11.5 20.25ZM13.95 14.4C14.281 14.649 14.3481 15.119 14.0991 15.45C13.9531 15.646 13.727 15.75 13.498 15.75C13.342 15.75 13.1841 15.701 13.0491 15.6L11.0491 14.1C10.8611 13.958 10.749 13.736 10.749 13.5V10C10.749 9.586 11.085 9.25 11.499 9.25C11.913 9.25 12.249 9.586 12.249 10V13.125L13.95 14.4ZM8.25 3C8.25 2.586 8.586 2.25 9 2.25H14C14.414 2.25 14.75 2.586 14.75 3C14.75 3.414 14.414 3.75 14 3.75H9C8.586 3.75 8.25 3.414 8.25 3Z"
+											fill="#6F7A83" />
+									</svg> 30 min read</div>
+							</div>
+						</div>
+					</a>
+					<!-- end box item 2 -->
+					<!-- box item 3 -->
+					<a href='#' class="topics-academy__item">
+						<div class="topics-academy__item-img">
+							<img src="./img/blockchain/items/3.jpg" alt="">
+							<p class="topics-academy__item-level intermediate">Intermediate</p>
+						</div>
+						<div class="topics-academy__item-content">
+							<h4 class="topics-academy__item-title">What Is the Ethereum Cancun Upgrade?</h4>
+							<div class="topics-academy__item-bottom">
+								<div>Nov 10, 2023</div>
+								<div class="topics-academy__item-read"><svg xmlns="http://www.w3.org/2000/svg"
+										width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M17.5979 7.96301L18.531 7.03003C18.824 6.73703 18.824 6.26199 18.531 5.96899C18.238 5.67599 17.763 5.67599 17.47 5.96899L16.4919 6.94702C15.1039 5.88702 13.377 5.25 11.5 5.25C6.951 5.25 3.25 8.951 3.25 13.5C3.25 18.049 6.951 21.75 11.5 21.75C16.049 21.75 19.75 18.049 19.75 13.5C19.75 11.368 18.9299 9.42901 17.5979 7.96301ZM11.5 20.25C7.778 20.25 4.75 17.222 4.75 13.5C4.75 9.778 7.778 6.75 11.5 6.75C15.222 6.75 18.25 9.778 18.25 13.5C18.25 17.222 15.222 20.25 11.5 20.25ZM13.95 14.4C14.281 14.649 14.3481 15.119 14.0991 15.45C13.9531 15.646 13.727 15.75 13.498 15.75C13.342 15.75 13.1841 15.701 13.0491 15.6L11.0491 14.1C10.8611 13.958 10.749 13.736 10.749 13.5V10C10.749 9.586 11.085 9.25 11.499 9.25C11.913 9.25 12.249 9.586 12.249 10V13.125L13.95 14.4ZM8.25 3C8.25 2.586 8.586 2.25 9 2.25H14C14.414 2.25 14.75 2.586 14.75 3C14.75 3.414 14.414 3.75 14 3.75H9C8.586 3.75 8.25 3.414 8.25 3Z"
+											fill="#6F7A83" />
+									</svg> 3 min read</div>
+							</div>
+						</div>
+					</a>
+					<!-- end box item 3 -->
+					<!-- box item 4 -->
+					<a href='#' class="topics-academy__item">
+						<div class="topics-academy__item-img">
+							<img src="./img/blockchain/items/4.jpg" alt="">
+							<p class="topics-academy__item-level intermediate">Intermediate</p>
+						</div>
+						<div class="topics-academy__item-content">
+							<h4 class="topics-academy__item-title">What Is Cryptonomy Web3 Wallet?</h4>
+							<div class="topics-academy__item-bottom">
+								<div>Nov 9, 2023</div>
+								<div class="topics-academy__item-read"><svg xmlns="http://www.w3.org/2000/svg"
+										width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M17.5979 7.96301L18.531 7.03003C18.824 6.73703 18.824 6.26199 18.531 5.96899C18.238 5.67599 17.763 5.67599 17.47 5.96899L16.4919 6.94702C15.1039 5.88702 13.377 5.25 11.5 5.25C6.951 5.25 3.25 8.951 3.25 13.5C3.25 18.049 6.951 21.75 11.5 21.75C16.049 21.75 19.75 18.049 19.75 13.5C19.75 11.368 18.9299 9.42901 17.5979 7.96301ZM11.5 20.25C7.778 20.25 4.75 17.222 4.75 13.5C4.75 9.778 7.778 6.75 11.5 6.75C15.222 6.75 18.25 9.778 18.25 13.5C18.25 17.222 15.222 20.25 11.5 20.25ZM13.95 14.4C14.281 14.649 14.3481 15.119 14.0991 15.45C13.9531 15.646 13.727 15.75 13.498 15.75C13.342 15.75 13.1841 15.701 13.0491 15.6L11.0491 14.1C10.8611 13.958 10.749 13.736 10.749 13.5V10C10.749 9.586 11.085 9.25 11.499 9.25C11.913 9.25 12.249 9.586 12.249 10V13.125L13.95 14.4ZM8.25 3C8.25 2.586 8.586 2.25 9 2.25H14C14.414 2.25 14.75 2.586 14.75 3C14.75 3.414 14.414 3.75 14 3.75H9C8.586 3.75 8.25 3.414 8.25 3Z"
+											fill="#6F7A83" />
+									</svg>15 min read</div>
+							</div>
+						</div>
+					</a>
+					<!-- end box item 4 -->
+					<!-- box item 5 -->
+					<a href='#' class="topics-academy__item">
+						<div class="topics-academy__item-img">
+							<img src="./img/blockchain/items/5.jpg" alt="">
+							<p class="topics-academy__item-level intermediate">Intermediate</p>
+						</div>
+						<div class="topics-academy__item-content">
+							<h4 class="topics-academy__item-title">What Are Real World Assets (RWA) in DeFi and Crypto?
+							</h4>
+							<div class="topics-academy__item-bottom">
+								<div>Nov 6, 2023</div>
+								<div class="topics-academy__item-read"><svg xmlns="http://www.w3.org/2000/svg"
+										width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M17.5979 7.96301L18.531 7.03003C18.824 6.73703 18.824 6.26199 18.531 5.96899C18.238 5.67599 17.763 5.67599 17.47 5.96899L16.4919 6.94702C15.1039 5.88702 13.377 5.25 11.5 5.25C6.951 5.25 3.25 8.951 3.25 13.5C3.25 18.049 6.951 21.75 11.5 21.75C16.049 21.75 19.75 18.049 19.75 13.5C19.75 11.368 18.9299 9.42901 17.5979 7.96301ZM11.5 20.25C7.778 20.25 4.75 17.222 4.75 13.5C4.75 9.778 7.778 6.75 11.5 6.75C15.222 6.75 18.25 9.778 18.25 13.5C18.25 17.222 15.222 20.25 11.5 20.25ZM13.95 14.4C14.281 14.649 14.3481 15.119 14.0991 15.45C13.9531 15.646 13.727 15.75 13.498 15.75C13.342 15.75 13.1841 15.701 13.0491 15.6L11.0491 14.1C10.8611 13.958 10.749 13.736 10.749 13.5V10C10.749 9.586 11.085 9.25 11.499 9.25C11.913 9.25 12.249 9.586 12.249 10V13.125L13.95 14.4ZM8.25 3C8.25 2.586 8.586 2.25 9 2.25H14C14.414 2.25 14.75 2.586 14.75 3C14.75 3.414 14.414 3.75 14 3.75H9C8.586 3.75 8.25 3.414 8.25 3Z"
+											fill="#6F7A83" />
+									</svg> 6 min read</div>
+							</div>
+						</div>
+					</a>
+					<!-- end box item 5 -->
+					<!-- box item 6 -->
+					<a href='#' class="topics-academy__item">
+						<div class="topics-academy__item-img">
+							<img src="./img/blockchain/items/6.jpg" alt="">
+							<p class="topics-academy__item-level advanced">Advanced</p>
+						</div>
+						<div class="topics-academy__item-content">
+							<h4 class="topics-academy__item-title">What Are Zk-Rollups? The Layer-2 Scalability
+								Technique
+							</h4>
+							<div class="topics-academy__item-bottom">
+								<div>Nov 5, 2023</div>
+								<div class="topics-academy__item-read"><svg xmlns="http://www.w3.org/2000/svg"
+										width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M17.5979 7.96301L18.531 7.03003C18.824 6.73703 18.824 6.26199 18.531 5.96899C18.238 5.67599 17.763 5.67599 17.47 5.96899L16.4919 6.94702C15.1039 5.88702 13.377 5.25 11.5 5.25C6.951 5.25 3.25 8.951 3.25 13.5C3.25 18.049 6.951 21.75 11.5 21.75C16.049 21.75 19.75 18.049 19.75 13.5C19.75 11.368 18.9299 9.42901 17.5979 7.96301ZM11.5 20.25C7.778 20.25 4.75 17.222 4.75 13.5C4.75 9.778 7.778 6.75 11.5 6.75C15.222 6.75 18.25 9.778 18.25 13.5C18.25 17.222 15.222 20.25 11.5 20.25ZM13.95 14.4C14.281 14.649 14.3481 15.119 14.0991 15.45C13.9531 15.646 13.727 15.75 13.498 15.75C13.342 15.75 13.1841 15.701 13.0491 15.6L11.0491 14.1C10.8611 13.958 10.749 13.736 10.749 13.5V10C10.749 9.586 11.085 9.25 11.499 9.25C11.913 9.25 12.249 9.586 12.249 10V13.125L13.95 14.4ZM8.25 3C8.25 2.586 8.586 2.25 9 2.25H14C14.414 2.25 14.75 2.586 14.75 3C14.75 3.414 14.414 3.75 14 3.75H9C8.586 3.75 8.25 3.414 8.25 3Z"
+											fill="#6F7A83" />
+									</svg>8 min read</div>
+							</div>
+						</div>
+					</a>
+					<!-- end box item 6 -->
+					<!-- box item 10 -->
+					<a href='#' class="topics-academy__item">
+						<div class="topics-academy__item-img">
+							<img src="./img/blockchain/items/7.jpg" alt="">
+							<p class="topics-academy__item-level advanced">Advanced</p>
+						</div>
+						<div class="topics-academy__item-content">
+							<h4 class="topics-academy__item-title">What Are Zk-Rollups? The Layer-2 Scalability
+								Technique</h4>
+							<div class="topics-academy__item-bottom">
+								<div>Nov 5, 2023</div>
+								<div class="topics-academy__item-read"><svg xmlns="http://www.w3.org/2000/svg"
+										width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M17.5979 7.96301L18.531 7.03003C18.824 6.73703 18.824 6.26199 18.531 5.96899C18.238 5.67599 17.763 5.67599 17.47 5.96899L16.4919 6.94702C15.1039 5.88702 13.377 5.25 11.5 5.25C6.951 5.25 3.25 8.951 3.25 13.5C3.25 18.049 6.951 21.75 11.5 21.75C16.049 21.75 19.75 18.049 19.75 13.5C19.75 11.368 18.9299 9.42901 17.5979 7.96301ZM11.5 20.25C7.778 20.25 4.75 17.222 4.75 13.5C4.75 9.778 7.778 6.75 11.5 6.75C15.222 6.75 18.25 9.778 18.25 13.5C18.25 17.222 15.222 20.25 11.5 20.25ZM13.95 14.4C14.281 14.649 14.3481 15.119 14.0991 15.45C13.9531 15.646 13.727 15.75 13.498 15.75C13.342 15.75 13.1841 15.701 13.0491 15.6L11.0491 14.1C10.8611 13.958 10.749 13.736 10.749 13.5V10C10.749 9.586 11.085 9.25 11.499 9.25C11.913 9.25 12.249 9.586 12.249 10V13.125L13.95 14.4ZM8.25 3C8.25 2.586 8.586 2.25 9 2.25H14C14.414 2.25 14.75 2.586 14.75 3C14.75 3.414 14.414 3.75 14 3.75H9C8.586 3.75 8.25 3.414 8.25 3Z"
+											fill="#6F7A83" />
+									</svg> 8 min read</div>
+							</div>
+						</div>
+					</a>
+					<!-- end box item 10 -->
+					<!-- box item 11 -->
+					<a href='#' class="topics-academy__item">
+						<div class="topics-academy__item-img">
+							<img src="./img/blockchain/items/8.jpg" alt="">
+							<p class="topics-academy__item-level intermediate">Intermediate</p>
+						</div>
+						<div class="topics-academy__item-content">
+							<h4 class="topics-academy__item-title">What Is Cryptonomy Web3 Wallet?</h4>
+							<div class="topics-academy__item-bottom">
+								<div>Nov 9, 2023</div>
+								<div class="topics-academy__item-read"><svg xmlns="http://www.w3.org/2000/svg"
+										width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M17.5979 7.96301L18.531 7.03003C18.824 6.73703 18.824 6.26199 18.531 5.96899C18.238 5.67599 17.763 5.67599 17.47 5.96899L16.4919 6.94702C15.1039 5.88702 13.377 5.25 11.5 5.25C6.951 5.25 3.25 8.951 3.25 13.5C3.25 18.049 6.951 21.75 11.5 21.75C16.049 21.75 19.75 18.049 19.75 13.5C19.75 11.368 18.9299 9.42901 17.5979 7.96301ZM11.5 20.25C7.778 20.25 4.75 17.222 4.75 13.5C4.75 9.778 7.778 6.75 11.5 6.75C15.222 6.75 18.25 9.778 18.25 13.5C18.25 17.222 15.222 20.25 11.5 20.25ZM13.95 14.4C14.281 14.649 14.3481 15.119 14.0991 15.45C13.9531 15.646 13.727 15.75 13.498 15.75C13.342 15.75 13.1841 15.701 13.0491 15.6L11.0491 14.1C10.8611 13.958 10.749 13.736 10.749 13.5V10C10.749 9.586 11.085 9.25 11.499 9.25C11.913 9.25 12.249 9.586 12.249 10V13.125L13.95 14.4ZM8.25 3C8.25 2.586 8.586 2.25 9 2.25H14C14.414 2.25 14.75 2.586 14.75 3C14.75 3.414 14.414 3.75 14 3.75H9C8.586 3.75 8.25 3.414 8.25 3Z"
+											fill="#6F7A83" />
+									</svg> 15 min read</div>
+							</div>
+						</div>
+					</a>
+					<!-- end box item 11 -->
+					<!-- box item 12 -->
+					<a href='#' class="topics-academy__item">
+						<div class="topics-academy__item-img">
+							<img src="./img/blockchain/items/9.jpg" alt="">
+							<p class="topics-academy__item-level beginner">Beginner</p>
+						</div>
+						<div class="topics-academy__item-content">
+							<h4 class="topics-academy__item-title">What Are Real World Assets (RWA) in DeFi and
+								Crypto?
+							</h4>
+							<div class="topics-academy__item-bottom">
+								<div>Nov 6, 2023</div>
+								<div class="topics-academy__item-read"><svg xmlns="http://www.w3.org/2000/svg"
+										width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M17.5979 7.96301L18.531 7.03003C18.824 6.73703 18.824 6.26199 18.531 5.96899C18.238 5.67599 17.763 5.67599 17.47 5.96899L16.4919 6.94702C15.1039 5.88702 13.377 5.25 11.5 5.25C6.951 5.25 3.25 8.951 3.25 13.5C3.25 18.049 6.951 21.75 11.5 21.75C16.049 21.75 19.75 18.049 19.75 13.5C19.75 11.368 18.9299 9.42901 17.5979 7.96301ZM11.5 20.25C7.778 20.25 4.75 17.222 4.75 13.5C4.75 9.778 7.778 6.75 11.5 6.75C15.222 6.75 18.25 9.778 18.25 13.5C18.25 17.222 15.222 20.25 11.5 20.25ZM13.95 14.4C14.281 14.649 14.3481 15.119 14.0991 15.45C13.9531 15.646 13.727 15.75 13.498 15.75C13.342 15.75 13.1841 15.701 13.0491 15.6L11.0491 14.1C10.8611 13.958 10.749 13.736 10.749 13.5V10C10.749 9.586 11.085 9.25 11.499 9.25C11.913 9.25 12.249 9.586 12.249 10V13.125L13.95 14.4ZM8.25 3C8.25 2.586 8.586 2.25 9 2.25H14C14.414 2.25 14.75 2.586 14.75 3C14.75 3.414 14.414 3.75 14 3.75H9C8.586 3.75 8.25 3.414 8.25 3Z"
+											fill="#6F7A83" />
+									</svg> 6 min read</div>
+							</div>
+						</div>
+					</a>
+					<!-- end box item 12 -->
+					<!-- box item 13 -->
+					<a href='#' class="topics-academy__item">
+						<div class="topics-academy__item-img">
+							<img src="./img/blockchain/items/1.jpg" alt="">
+							<p class="topics-academy__item-level beginner">Beginner</p>
+						</div>
+						<div class="topics-academy__item-content">
+							<h4 class="topics-academy__item-title">The Relationship Between Blockchain and AI</h4>
+							<div class="topics-academy__item-bottom">
+								<div>Nov 16, 2023</div>
+								<div class="topics-academy__item-read"><svg xmlns="http://www.w3.org/2000/svg"
+										width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M17.5979 7.96301L18.531 7.03003C18.824 6.73703 18.824 6.26199 18.531 5.96899C18.238 5.67599 17.763 5.67599 17.47 5.96899L16.4919 6.94702C15.1039 5.88702 13.377 5.25 11.5 5.25C6.951 5.25 3.25 8.951 3.25 13.5C3.25 18.049 6.951 21.75 11.5 21.75C16.049 21.75 19.75 18.049 19.75 13.5C19.75 11.368 18.9299 9.42901 17.5979 7.96301ZM11.5 20.25C7.778 20.25 4.75 17.222 4.75 13.5C4.75 9.778 7.778 6.75 11.5 6.75C15.222 6.75 18.25 9.778 18.25 13.5C18.25 17.222 15.222 20.25 11.5 20.25ZM13.95 14.4C14.281 14.649 14.3481 15.119 14.0991 15.45C13.9531 15.646 13.727 15.75 13.498 15.75C13.342 15.75 13.1841 15.701 13.0491 15.6L11.0491 14.1C10.8611 13.958 10.749 13.736 10.749 13.5V10C10.749 9.586 11.085 9.25 11.499 9.25C11.913 9.25 12.249 9.586 12.249 10V13.125L13.95 14.4ZM8.25 3C8.25 2.586 8.586 2.25 9 2.25H14C14.414 2.25 14.75 2.586 14.75 3C14.75 3.414 14.414 3.75 14 3.75H9C8.586 3.75 8.25 3.414 8.25 3Z"
+											fill="#6F7A83" />
+									</svg>15 min read</div>
+							</div>
+						</div>
+					</a>
+					<!-- end box item 13 -->
+					<!-- box item 14 -->
+					<a href='#' class="topics-academy__item">
+						<div class="topics-academy__item-img">
+							<img src="./img/blockchain/items/2.jpg" alt="">
+							<p class="topics-academy__item-level advanced">Advanced</p>
+						</div>
+						<div class="topics-academy__item-content">
+							<h4 class="topics-academy__item-title">What Is Hash Rate?</h4>
+							<div class="topics-academy__item-bottom">
+								<div>Nov 14, 2023</div>
+								<div class="topics-academy__item-read"><svg xmlns="http://www.w3.org/2000/svg"
+										width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M17.5979 7.96301L18.531 7.03003C18.824 6.73703 18.824 6.26199 18.531 5.96899C18.238 5.67599 17.763 5.67599 17.47 5.96899L16.4919 6.94702C15.1039 5.88702 13.377 5.25 11.5 5.25C6.951 5.25 3.25 8.951 3.25 13.5C3.25 18.049 6.951 21.75 11.5 21.75C16.049 21.75 19.75 18.049 19.75 13.5C19.75 11.368 18.9299 9.42901 17.5979 7.96301ZM11.5 20.25C7.778 20.25 4.75 17.222 4.75 13.5C4.75 9.778 7.778 6.75 11.5 6.75C15.222 6.75 18.25 9.778 18.25 13.5C18.25 17.222 15.222 20.25 11.5 20.25ZM13.95 14.4C14.281 14.649 14.3481 15.119 14.0991 15.45C13.9531 15.646 13.727 15.75 13.498 15.75C13.342 15.75 13.1841 15.701 13.0491 15.6L11.0491 14.1C10.8611 13.958 10.749 13.736 10.749 13.5V10C10.749 9.586 11.085 9.25 11.499 9.25C11.913 9.25 12.249 9.586 12.249 10V13.125L13.95 14.4ZM8.25 3C8.25 2.586 8.586 2.25 9 2.25H14C14.414 2.25 14.75 2.586 14.75 3C14.75 3.414 14.414 3.75 14 3.75H9C8.586 3.75 8.25 3.414 8.25 3Z"
+											fill="#6F7A83" />
+									</svg> 30 min read</div>
+							</div>
+						</div>
+					</a>
+					<!-- end box item 14 -->
+					<!-- box item 15 -->
+					<a href='#' class="topics-academy__item">
+						<div class="topics-academy__item-img">
+							<img src="./img/blockchain/items/3.jpg" alt="">
+							<p class="topics-academy__item-level intermediate">Intermediate</p>
+						</div>
+						<div class="topics-academy__item-content">
+							<h4 class="topics-academy__item-title">What Is the Ethereum Cancun Upgrade?</h4>
+							<div class="topics-academy__item-bottom">
+								<div>Nov 10, 2023</div>
+								<div class="topics-academy__item-read"><svg xmlns="http://www.w3.org/2000/svg"
+										width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<path
+											d="M17.5979 7.96301L18.531 7.03003C18.824 6.73703 18.824 6.26199 18.531 5.96899C18.238 5.67599 17.763 5.67599 17.47 5.96899L16.4919 6.94702C15.1039 5.88702 13.377 5.25 11.5 5.25C6.951 5.25 3.25 8.951 3.25 13.5C3.25 18.049 6.951 21.75 11.5 21.75C16.049 21.75 19.75 18.049 19.75 13.5C19.75 11.368 18.9299 9.42901 17.5979 7.96301ZM11.5 20.25C7.778 20.25 4.75 17.222 4.75 13.5C4.75 9.778 7.778 6.75 11.5 6.75C15.222 6.75 18.25 9.778 18.25 13.5C18.25 17.222 15.222 20.25 11.5 20.25ZM13.95 14.4C14.281 14.649 14.3481 15.119 14.0991 15.45C13.9531 15.646 13.727 15.75 13.498 15.75C13.342 15.75 13.1841 15.701 13.0491 15.6L11.0491 14.1C10.8611 13.958 10.749 13.736 10.749 13.5V10C10.749 9.586 11.085 9.25 11.499 9.25C11.913 9.25 12.249 9.586 12.249 10V13.125L13.95 14.4ZM8.25 3C8.25 2.586 8.586 2.25 9 2.25H14C14.414 2.25 14.75 2.586 14.75 3C14.75 3.414 14.414 3.75 14 3.75H9C8.586 3.75 8.25 3.414 8.25 3Z"
+											fill="#6F7A83" />
+									</svg> 3 min read</div>
+							</div>
+						</div>
+					</a>
+					<!-- end box item 15 -->
+				</div>
+				<!-- end box -->
+			</div>
+		</div>
+	</main>
+	<script src="./js/topics-academy.js"></script>
+</body>
+
+</html>

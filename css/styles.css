@@ -1,0 +1,140 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-size: 16px;
+  line-height: 1;
+  font-family: SF;
+  font-size: 16px;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: SF;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.df-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.coin-main {
+  position: relative;
+}
+.coin-main__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(0deg, #fff 8.73%, #82c6c0 56.71%, #96bbf2 99.95%);
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .coin-main__bg {
+    height: 125vh;
+  }
+}
+.coin-main__top {
+  padding: 56px 0px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .coin-main__top {
+    padding: 32px 0px;
+  }
+}
+.coin-main__top-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 84px;
+}
+@media (max-width: 1024px) {
+  .coin-main__top-list {
+    gap: 40px;
+  }
+}
+@media (max-width: 850px) {
+  .coin-main__top-list {
+    gap: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .coin-main__top-list {
+    display: none;
+  }
+}
+.coin-main__top-item {
+  display: flex;
+  gap: 16px;
+  text-align: justify;
+}
+@media (max-width: 850px) {
+  .coin-main__top-item {
+    gap: 10px;
+  }
+}
+.coin-main__top-item-img {
+  width: 48px;
+  height: 48px;
+}
+.coin-main__title {
+  color: #000;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 132%;
+  letter-spacing: -0.56px;
+  margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+  .coin-main__title {
+    font-size: 38px;
+  }
+}
+.coin-main__subtitle {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: -0.44px;
+  max-width: 786px;
+  width: 100%;
+  margin: 0 auto 32px;
+}
+@media (max-width: 768px) {
+  .coin-main__subtitle {
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=styles.css.map */
